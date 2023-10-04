@@ -1,0 +1,653 @@
+Pyhton is a simple ,easy and powerful Programming language.
+     simple  --->python supports simple syntax.
+	 Easy    --->Python supports easy/less coding.
+	 powerfull -->python supports more modules.
+	
+python is beginners language
+python is a general-purpose language.
+
+Keywords 
+--------
+Keyword is a pre-defined word which has some default functionality.
+
+We can not change the meaning of keywords.
+
+we use help('keywords') to get all python keywords.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not 
+
+Note: Only False, None and True will start with upper case.
+
+
+Primary Key:
+==============
+
+Primary Key is a column that is used to uniquely identify each tuple of the table.
+It is used to add integrity constraints to the table. 
+Only one primary key is allowed to be used in a table. 
+Duplicate and NULL (empty) values are not valid in the case of the primary key. 
+Primary keys can be used as foreign keys for other tables too.
+
+Let’s take an example,
+We have a table name employee which stores data of employees of a company. The below table shows the contents of the table.
+
+Emp_id	Name	Ph_No.	Position	Salary
+Emp_id here is primary key of the table. As the id of each employee is unique and no two employees can have the same Emp_id.
+
+Unique Key:
+===========
+Unique key is a constraint that is used to uniquely identify a tuple in a table.
+Multiple unique keys can present in a table. NULL values are allowed in case of a unique key. These can also be used as foreign keys for another table.
+
+Let’s take an example,
+We have a table name employee which stores data of employees of a company. The below table shows the contents of the table.
+
+Emp_id	Name	Ph_No.	Position	Salary
+Ph_No here is the foriegn key of the table. As the phone number of each employee is unique and it might be possible that an employee does not have any phone number.
+
+Difference between Primary Key and Unique Key 
+----------------------------------------------
+           Primary Key	                                           Unique Key                                 
+Unique identifier for rows of a table	                Unique identifier for rows of a table when primary key is not present
+Cannot be NULL	                                        Can be NULL
+Only one primary key can be present in a table	        Multiple Unique Keys can be present in a table
+present in a table	                                    present in a table
+Selection using primary key creates clustered index	    Selection using unique key creates non-clustered index
+
+
+what are the benefits of using python?
+python is a high-level,interpreted,general-purpose programming language.Being a general-purpose language,
+it can be used to build almost any type of application with the almost any type of application with the right tools/libraries.
+Additionally,python supports objects,models,threads,exception-handling,and automatic memory management which help in modeling
+real-world problems and building applications to solve these problems.
+
+what is the benefits of using python?
+python is generl-purpose language that has a simple,easy-to-learn syntax that emphasizes readability and therfore reduces the cost of program maintainance.
+moreover,the language is capable of  scripting,is completly open-source,and supports third-party packages encouraging modularity and code reuse.
+Its high-level data structures,combined with dynamic typing and dynamic binding,attract a huge community of developers fro rapid application development and deployment.
+
+
+what is an interpretd language?
+An interpreted language excutes its statements line by line .
+Languages such as python,javascript,R,PHP,,and Ruby are prime examples of interpreted languages.
+programs written in an interpreted language runs directly from the source code,with no intermediary compilation step.
+
+
+what is self in python?
+Self is a keyword in python used to define an instance of an object of class.
+In python,it is explicity used as the first parameter,unlike in javascript where it is optional.
+It helps in distingushing between the methods attributes of a class from its local variables.
+
+What is PEP 8 and why is it important?
+PEP stands for python Enhancement Proposal .
+A PEP is an official design document providing information to the python community, or describing a new feature for python or its procrsses.
+PEP 8 is especially important since it documents the style guidelines for python code.
+Apperently contributing to the python open-source community requires you to follow these style guidelines sincerely and strictly.
+
+what is slicing in python?
+As the name suggests,'slicing' is taking parts of .
+syntax for slicing is [start:stop:step]
+Start is the starting index from where to slice a list or tuple.
+stop is ending  index or where to stop.
+step is the number of steps to jump.
+Default value for start is 0,stop is number of items,steps is 1.
+slicing can be done on strings,arrays,lists,and tuples.
+
+
+what is difference b/w class and object?
+
+An object is an instance of a class.
+Object hold any information.,but classes don't have any information.
+Definition of properties and functions can be done at class and can be used by the object.
+
+class can have sub-classes,and an object doesn't have sub-objects.
+
+
+Data types: 2
+         1--->Primitive --->a.Boolean -->1.Boolean
+		 		            b.Numeric--->1.Charecter -->a.Char	
+							             2.Integral -->a.integer --->1.byte
+										                              2.short
+																	  3.int
+																	  4.long
+														b.Floating-pointer -->1.float
+														                      2.double
+																			  
+		2.Non-primitive --->a.string
+		                    b.array
+							c.etc
+														
+										                  
+What we call a function which is incomplete version of a function?
+When a function is defined then the system stores parameters and local variables in an area of memory. What this memory is known as?
+
+
+Lambda Functions
+-----------------
+lambada function has no name,
+we can not call the function
+nameless function/Anonymous Functions/use-and-throw functions.
+
+Eg:
+lambda <args> : <exp>
+
+x = lambda a,b : a+b
+print(x(10,20))
+
+lambda special functions:
+     1.filter()
+     2.map()
+     3.reduce()
+
+filter()
+---------
+collecting some aviod data and required data.
+
+lambda <args> : <exp>     ------->LambdaSyntax
+
+syn:
+filter(LambdaSyntax, obj_name)
+
+14-03-2022
+filter()
+--------
+map()
+-----
+
+map() is used to apply the same expression to all elements in the object.
+syn:
+map(LambdaSyn,obj_name)
+
+Lambda Syn  ---->lambda <args> : <exp>
+obj_name   ----->any one of str,list,tuple,set,dict........
+
+reduce()
+--------
+reduce() is not a global function.
+It belongs to functools module.
+we have import reduce() into our file from functools module.
+
+It is used to reduce all elements and returns only one element.
+It works likemax(),min(), and sum().
+
+
+14=03=2022
+=============
+
+filter()
+---------
+
+lambda <args> : <exp>     ------->LambdaSyntax
+
+syn:
+filter(LambdaSyntax, obj_name)
+
+
+
+File Handling
+-------------
+The key function for working with files in python is the open() function.
+The open() function takes two parameters :filename,and mode.
+
+File I/O operations
+I ---->input operations ---->giving data(addding,appending) --->write operation
+O --->output operations ---->getting data(fetching)         --->read operation
+
+write operations
+------------------
+open   --->open()
+write  --->write()
+close  --->close()
+
+syn:
+open(filename, mode)
+write(content)
+close()
+
+we can take file name either path or without path also.
+if we don't take the path then interpreter considerations python path as default path and 
+check for the file in python folder.
+
+If we give path then interpreter will go to the specified path and check for the file.
+
+if the file is available in the path then it wiil open the file.
+
+If the file is available then interprter will create new file and open the file.
+
+Here,mode represents the file operation like write(w),read(r),append(a)....
+
+if we dont specify any mode then it wiil take read(r) as default mode.
+
+we use write() to add the data to the file.
+
+we have to close the file by using close().
+
+if we dont close the file by using close() then data will add to the file.
+
+close() represents saving the file.
+
+
+Exception Handling
+=====================
+Exception means error
+
+python supports two types exceptoins:
+
+1.System-Defined Exceptions
+Default Errors like (Name error,Type Error,syntax error,value error,Attribute error,key error)
+  --->These are exceptions are pre-defined in python.
+  ---->These errors will raise automatically when the corresponding error came.
+   
+   1.Devlopment Time Exception(DTE)
+      If an exception raises at the time of developing a project ,that is called DTE.
+	  DTE will raise c=because of wrong/bad syntax.
+	  DTE can be solved by taking proper syntax.
+	  
+   
+   2.Runtime Exceptions(RTE)
+     If an exception raises at the time of running a project ,that is called RTE.
+	 RTE will raise because of users wrong input memory issuses,software failure..
+	 RTE can be solved by using try-except blocks.
+   
+   
+   
+   
+2.User-Defined Exceptions:
+   We create our own errors as per the requirment.
+
+
+RegularExpresions
+---------------------
+It is also called RE/RegEx
+
+1.length must 10 digits.
+2.first digit must be  either 6 or 7 or 8 or 9
+3.remaining 9 digits can be any combination.
+
+ABCDE1234E
+
+charecter classes
+------------------
+1.sysem-defined charecter classes
+---------------------------------
+/d ---->to check digits(0 to 9)
+/D ---->to check except digits(remaing word and special chrecters,space)
+/s ----->to check space
+/S  --->to check except space
+/w ---->to check  word(lower case,upper case,digits,underscores)
+/W ---->to check except word,
+
+
+
+2.user-defined charecter classes
+---------------------------------
+[abcd]  ---->either a or b or c or d
+[a-z]   ---->all lower case charecters
+[a-zA-Z] ---->all lower and upper cases
+[A-Z0-9]  ----->all upercase and digits
+
+
+3. Quantifiers
+---------------
+a*       ---->it will match a, 0 0r more times
+a+       ----->it wil match a, 1 or more  times
+a?       ------>it will match a,0 or 1
+a{n}     ------>it will match a, exactly n number of times.
+a{n, }    ----->it will match a, min n times and max m times.
+a{n,m}    ----->it will match a, min n times and max m times.
+
+
+RE Functions
+---------------
+match()
+fullmatch()
+search()
+findall()
+sub(})
+subn()
+split()
+
+
+return keyword
+---------------
+if we use print() inside the def function then it will display result.
+
+
+
+unit testing
+------------
+unit -->small functions
+testing --->checking
+
+pythn supports unittest modules to test the phython functions.
+unittest module has testcase class which is used to create user-defined test cases.
+we can create testcases for all or required functions.
+we use assertEqual() to check whether the actual result and exepected result same or not.
+unittesrt module has main() to run all testcases.
+we can also run specific 
+
+
+
+File pointer
+------------
+File pointer support tell function and seek function.
+tell() is used to get the current position of file pointer.
+seek() is used to get 
+
+
+
+
+
+Till now we developed programs around functions,this way of developing a program is called procedure-oriented programming(POP).
+
+Now will develop programs around class and objects,this way of developing a program is called object-oriented progamming(oops).
+
+In oops,class and objects are the main aspects.
+
+
+Class
+=======
+class is a blueprint where we can create class attributes(variables and methods).
+
+variables also called properties.
+actions also called methods.
+
+we can only create attributes in the class but we can't use the same attributes in the class.
+
+if we want to use the class attributes then we have to create an object.
+An object is an instance of a class.
+class attributes are used with an object.
+
+
+
+
+
+class variable(c/v):
+----------------
+1.If the value of variable is same for all objects then that variable is called class variable.
+   Eg:company and location are class variable in the above example.
+   
+2.class variable will be created inside the class.
+3.Class variables are also called static variables because the values of class variable is fixed for all objects.
+4.class variables will be created only one time,so they ocuppy less memory.
+5.if we want to use class variable inside the method then we need use class name along with class variable.
+
+
+object variable(o/v):
+--------------------
+1.if the value of variable is different for all objects then that variable is called object variable.
+  Eg:name and salary are object variables in the above example.
+
+2.object variables will be created inside the constructor.
+3.o/v are also called non-static variables because the values of object variables will keep on changed.
+4.o/v create multiple times for each object,so they occupy more memory. 
+5.we can use o/v directly in any method.
+
+difference b/w constructor and method:
+--------------------------------------
+
+constructor:
+-----------
+1.it is name is __init__() in python.
+2.it is used to initialize/create o/v's.
+3.it will be executed automatically while object is creating.
+4.it will be called only one time per one object.
+
+method:
+--------
+1.method name can be anyname.
+2.method is used to write business logic.
+3.method will be executed when we call the method manually.
+4.method can be called n no.of times per one object.
+
+
+OOPS Techniques:
+--------------------
+1.Data Abstractioon
+2.Inheritance
+3.Polymorphism
+4.Encapsulation
+
+
+Data Abstraction:
+--------------------
+It is the process of highlightig required data and hiding unneccesary data.
+
+Here,we hide the dta which is not required for user and we show the data which is required for user.
+
+Eg: ATM
+
+Not required options to user              ATMBOX               Required options to user
+-----------------------------       +-------------------+      ------------------------
+1.Total amount in the box           |                   |      1.Banking
+2.presentation code                 |                   |      2.Withdraw
+3.backend coding                    |                   |      3.Deposit
+4.database name                     |                   |      4.Mini statement
+                                    |                   |      5.BAl Enquiry
+                                    +-------------------+      6.PIN change
+	
+	Hiding                                                     showing
+	-------                                                    -------
+	
+In other languages,we use Access modifiers to implement data abstraction.
+
+Access modifiers are public ,private and protected.
+
+In python Language,we use double underscore to implement data abstraction.
+
+By default,every attribute(variables and methods)is a public attribute which can be accessed by anyone from outside the class.
+
+If we want to make any attribute as private attribute then we need to add double underscores before the attribute name so that no body access from outside the class.
+
+
+
+
+
+Enacapsulation:
+---------------
+Encapsulation means wrapping/binding/gathering/grouping
+
+wrapping of data into single entity.(entity mean class in this case)
+
+It is process of wrapping/binding data into single entity/class.
+
+If you write variables and methods in the class then that is called Encapsulation.
+
+In oops,Every class is an example of Encapsulation.
+ 
+class StudentsData:
+    sname = 'Raju'
+	iname = 'CLN'
+	fee = 5000
+	course = 'Python full stack'
+	def learing(self):
+	    print('Students are learing python full stack')
+	def writing(self):
+	    print('Students write exam very week')
+		
+s1 = StudentsData()
+print(s1.sname)
+print(s2.iname)
+print(s1.fee)
+print(s1.course)
+s1.learning()
+s1.writing()		
+	
+	
+	
+Inheritance:
+------------
+It is the process of deriving the attributes from one class to another class.
+
+The class which is giving the attributes is called parent/super/Base class.
+
+The class which is taking the attributes is called child/sub/derived class.
+
+Types of inheritance
+--------------------
+1.single-level Inheritance
+2.Multi-level Inheritance
+3.Multipule Inheritance
+4.Hierarchical Inheritance
+
+
+
+Docstring In oops
+------------------
+DcoString is string which gives the documentation/description about class or method.
+we can write docstring in both class and method.
+The docstring must be in the first line of lass or method.
+docstring can called/executed by using python special method __doc__.
+
+Triple quotes are used:
+     1.to write multiple lines comment
+	 2.to wrute multiple line string
+	 3.to write docstring in the class
+
+
+
+
+Iterator
+=========
+Iterator is an object which executes the same block of code n no.of times.
+Every loop is an example of an iterator
+iterator is managed by iter() and next().
+iter() represents to start new iteration.
+next() represnts to next element from the given object.
+
+
+Genarator
+==========
+Generator is function.
+Generator is used to generate the result one by one.
+we use yield keyword to implement generator.
+
+
+
+Decorator
+------------
+Decorator is function which adds extra functionality to the other/main function.
+Decorator will not change/modify the functionality of the main function.
+In python,Everything is an object.
+Functions are called  high-class/first-class objects,because functions are used:
+
+
+What is the difference b/w OOps and Object based programming language?
+--------------------------------------------------------------------------
+OOPS:
+=======
+OOPs like Python,Java and C++ follow concepta of oops like Enacapsulation,Abstraction,Polymorphism & Inheritance.
+Object based programming languages follow some features of OOPs But they do not provide support for Polymorphism and inheritance.
+
+ Egg: 
+    JavaScript
+	VBScript etc.
+	
+OBPL:
+=====
+Object based programming language provide support for objects and you can build objects from constructor.
+They languages also support Enacapsulation.
+
+These are also known as Prototype-oriented languages.
+
+
+
+
+
+
+What is oops?
+OOPS is abbreivated as object oriented programming system in which programs are
+considered as a collection of objects .
+Each object is nothing but an instance of a class.
+
+write basic concepts of OOP's?
+Following are the concepts of OOPs:
+1.Abstraction
+2.Encapsulation
+3.Inheritance
+4.Polymorphism
+5.Manipulators.
+
+what is class?
+A class is simply a representation of typr of object.
+It is the blueprint/plan/templets that describes the details of an object.
+   
+   
+what is object?
+An object is an instance of a class.
+It has its own state,behaviour,and identity.
+
+what is Encapsulation?
+Encapsulation is ana attribute of an object,and it contains all data which is hidden.
+That hidden data can be resticted to the members of that class levels are public,protected,private,internal and protected internal.
+
+What is Polymorphism?
+Polymorphism is nothing but assigning behavior or value in a subclass to something that was alredy declared in the main class.
+simply,polymorphisam takes more than one form.
+
+
+what is inheritance?
+Inheritance is a concept where one class shares the structure and behaviour defined in another class.
+If Inheritance applied to one class is called single inheritance ,and if it depends on multiple classes,then it is called multiple inheritance.
+ 
+what is maniplulators?
+Manipulators are the functions which can be used in conjuction with the insrtion (<<) and extraction (>>)
+operators on an object.Examples are endl and setw.
+
+Explain the term constructor?
+A constructor is a method used to initialize the state of an object,and it gets invoked at the time of object creation.
+Rules for constructor are:
+constructor name should be the same as a class name.
+A constructor must have no return type.
+
+Define Destructor?
+A destructor is method which is automatically called when the object is made of scope or detroyed.
+Destructor  name is also same as class name but with the till symbol before the name.
+
+what is an inline function?
+an inline function is a technique used by the compilers and instructors to insert complete body of the function wherever that function is used in the prigram source code.
+
+what is a virtual function?
+A virtual function is a member function of  a class,and its functionality cam be overidden in its derived class.
+This function can be implemented by using a keyword called virtual,and it can be given during function declaration.
+A virtual function can be declared using to token(virtual) in c++.
+It can be achieved in c/python language by using function pointers or pointers to function.
+ 
+What is friend function?
+A friend function is a friend of a class that is allowed to access to public,private,or protected data in that same class.if the function is defined outside the class cannot access such informmation .
+A friend can be declared anywhere in the class declaration,and it can't be affected by access control keywords like private,public or pritected.
+
+what is function overloading?
+Function overloading is a regular function ,but it can perform different tasks.
+It allows the creation of sevaral methods with the same name which differ from each other by the type of input of the function.
+
+
+what is operator overloading?
+operator overloading is a function where diferent operatiors are applied and depends on the arguments.
+Operator,-,* can be used to pass through the function ,and it has own precedence to excute.
+ 
+what is an absract class?
+An absractclass is a class which cannot be instantiated.
+creation of an object is not possible with an absract class,but it can be inherited.
+An abstract class can aontain only an absract method.java allows only absract method in absract class while other languages allow non -abstract method as well.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
